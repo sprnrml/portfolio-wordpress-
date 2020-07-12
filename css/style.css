@@ -55,6 +55,11 @@ ul.slider img {
     border: solid 3px #000;
     margin: 50px 0;
     max-width: 500px;
+    padding: 0 10px 10px 10px;
+    text-align: left;
+}
+.news_archive {
+    text-align: right;
 }
 
 
