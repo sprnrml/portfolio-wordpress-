@@ -1,0 +1,66 @@
+body{
+    background-color:floralwhite;
+    font-family: sans-serif;
+}
+.container {
+    margin:  0 auto;
+    text-align: -webkit-center;
+}
+.main_header{
+    padding-top: 50px;
+}
+.header_logo {
+    position: relative;
+    bottom: 40px;
+    right: 100px;
+}
+.header_logo img {
+    height: 106px;
+    border-radius: 28px;
+}
+.navbar {
+    display: -webkit-inline-box;
+}
+.navbar > ul {
+    width: 6em;
+    margin-right: 90px;
+}
+li.dropdown {
+background-color: lightslategray;
+cursor: pointer;
+text-align: center;
+}
+ul.dropdown_menu {
+    display: none;
+    width: 8em;
+}
+
+ul.dropdown_menu > li {
+    background-color: lavender;
+    padding:0.5em;
+}
+.main_slider {
+    text-align: -webkit-center;
+    max-width: 600px;
+}
+.slider {
+    overflow: hidden;
+}
+ul.slider img {
+    width:100%;
+    max-width: 100%;
+    height: auto;
+}
+.news{
+    border: solid 3px #000;
+    margin: 50px 0;
+    max-width: 500px;
+}
+
+
+
+
+
+.main_footer {
+    background-color: bisque;
+}
