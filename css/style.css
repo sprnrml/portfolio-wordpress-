@@ -13,8 +13,7 @@ body {
 }
 
 .header_logo {
-    position: relative;
-    bottom: 40px;
+    padding: 16px;
 }
 
 .header_logo img {
@@ -28,7 +27,6 @@ body {
 
 .header_menu {
     display: inline-flex;
-    text-align: -webkit-center;
     margin: auto;
 }
 
@@ -38,18 +36,25 @@ body {
 
 li.dropdown {
     cursor: pointer;
-    margin-right: 50px;
+    padding: 0 60px;
+}
+
+li.dropdown>a {
+    position: relative;
+    left: 21px;
 }
 
 ul.dropdown_menu {
-    /* display: none; */
+    display: none;
     z-index: 1;
+    position: absolute;
+    padding-top: 16px;
 }
 
 ul.dropdown_menu:before {
     content: "";
     position: absolute;
-    top: -10px;
+    top: -7px;
     left: 50%;
     margin-left: -15px;
     border: 12px solid transparent;
@@ -59,13 +64,24 @@ ul.dropdown_menu:before {
 
 ul.dropdown_menu>li {
     background-color: #000055;
-    margin-top: 14px;
-    padding: 0 30px 6px 30px;
+    padding: 0 24px 10px;
 }
 
 .menu-item {
     padding-top: 16px;
     border-bottom: solid 2px;
+}
+
+.toggle_menu {
+    display: none;
+    position: absolute;
+    right: 30px;
+    top: 50px;
+    font-size:
+}
+
+.toggle_open {
+    display: none;
 }
 
 .main_wrapper {
@@ -127,4 +143,67 @@ ul.slider img {
 
 .footer_icon>li:nth-last-child(2) {
     margin: 0 30px;
+}
+
+@media screen and (max-width: 896px) {
+    li.dropdown {
+        cursor: pointer;
+        padding: 0 30px;
+    }
+    .news {
+        border: solid 1px #000;
+        margin: 50px 0;
+        max-width: 720px;
+        padding-bottom: 10px;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main_header {
+        background-color: #000;
+        color: #fff;
+        text-align: center;
+    }
+    .header_menu {
+        display: none;
+        font-size: 26px;
+        position: absolute;
+        right: 30px;
+        top: 50px;
+    }
+    .toggle_menu {
+        border-radius: 3px;
+        display: block;
+        position: absolute;
+        right: 30px;
+        top: 50px;
+        font-size: 26px;
+    }
+    .fas {
+        margin: 3px;
+    }
+    .toggle_open {
+        background-color: #A9A9A9;
+        color: #fff;
+        /* display: none; */
+    }
+    .toggle_open>ul>li {
+        border-bottom: solid 2px #fff;
+        padding: 30px;
+    }
+    .header_logo img {
+        height: 70px;
+        border-radius: 28px;
+    }
+    .navbar {
+        display: -webkit-inline-box;
+    }
+    .news {
+        border: solid 1px #000;
+        margin: 50px 0;
+        max-width: 330px;
+        padding-bottom: 10px;
+        text-align: left;
+    }
 }
