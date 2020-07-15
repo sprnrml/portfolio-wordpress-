@@ -20,6 +20,11 @@ $(function() {
 });
 
 //ハンバーガーメニュー
-$('.toggle_menu').on('click', function() {
+$('#toggle_menu').on('click', function() {
     $('.toggle_open').slideToggle();
+});
+
+//ハンバーガーメニューオープン
+$('.toggle_open-menu').on('click', function() {
+    $('.toggle_dropdown', this).slideToggle();
 });

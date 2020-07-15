@@ -12,10 +12,30 @@
     <header>
       <div class="toggle_open">
         <ul>
-          <li><a href="#">概要</a></li>
-          <li><a href="#">詳しく</a></li>
-          <li><a href="#">趣味</a></li>
-          <li><a href="#">アクセス</a></li>
+          <li class="toggle_open-menu"><a href="#">概要</a>
+            <ul class="toggle_dropdown">
+              <li><?php $args = array('menu' => '概要', 'menu_class' => 'menu', 'container' => false,);
+                  wp_nav_menu($args); ?></li>
+            </ul>
+          </li>
+          <li class="toggle_open-menu"><a href="#">詳細</a>
+            <ul class="toggle_dropdown">
+              <li><?php $args = array('menu' => '詳細', 'menu_class' => 'menu', 'container' => false,);
+                  wp_nav_menu($args); ?></li>
+            </ul>
+          </li>
+          <li class="toggle_open-menu"><a href="#">趣味</a>
+            <ul class="toggle_dropdown">
+              <li><?php $args = array('menu' => '趣味', 'menu_class' => 'menu', 'container' => false,);
+                  wp_nav_menu($args); ?></li>
+            </ul>
+          </li>
+          <li class="toggle_open-menu"><a href="#">アクセス</a>
+            <ul class="toggle_dropdown">
+              <li><?php $args = array('menu' => 'アクセス', 'menu_class' => 'menu', 'container' => false,);
+                  wp_nav_menu($args); ?></li>
+            </ul>
+          </li>
         </ul>
       </div>
       <div class="main_header">
@@ -33,9 +53,9 @@
               </li>
             </ul>
             <ul>
-              <li class="dropdown"><a href="#">詳しく</a>
+              <li class="dropdown"><a href="#">詳細</a>
                 <ul class="dropdown_menu">
-                  <li><?php $args = array('menu' => '詳しく', 'menu_class' => 'menu', 'container' => false,);
+                  <li><?php $args = array('menu' => '詳細', 'menu_class' => 'menu', 'container' => false,);
                       wp_nav_menu($args); ?></li>
                 </ul>
             </ul>
@@ -57,7 +77,7 @@
               </li>
             </ul>
           </div>
-          <div class="toggle_menu">
+          <div id="toggle_menu">
             <a href="#"><i class="fas fa-bars"></i></a>
           </div>
         </nav>
