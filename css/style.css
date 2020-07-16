@@ -194,7 +194,7 @@ ul.slider img {
     .toggle_open {
         background-color: #A9A9A9;
         color: #fff;
-        /* display: none; */
+        display: block;
     }
     .toggle_open>ul>li {
         border-bottom: solid 2px #fff;
@@ -225,7 +225,7 @@ ul.slider img {
     .news {
         border: solid 1px #000;
         margin: 50px 0;
-        max-width: 330px;
+        max-width: 360px;
         padding-bottom: 10px;
         text-align: left;
     }
