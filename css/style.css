@@ -1,6 +1,6 @@
 body {
     background-color: floralwhite;
-    font-family: sans-serif;
+    font-family: -webkit-pictograph;
 }
 
 .wrapper {
@@ -98,7 +98,7 @@ ul.dropdown_menu>li>a:hover {
 
 .main_slider {
     text-align: -webkit-center;
-    max-width: 600px;
+    max-width: 1200px;
 }
 
 .slider {
@@ -114,6 +114,7 @@ ul.slider img {
 
 .news {
     border: solid 1px #000;
+    font-family: -webkit-pictograph;
     margin: 50px 0;
     max-width: 800px;
     padding-bottom: 10px;
@@ -194,7 +195,6 @@ ul.slider img {
     .toggle_open {
         background-color: #A9A9A9;
         color: #fff;
-        display: block;
     }
     .toggle_open>ul>li {
         border-bottom: solid 2px #fff;

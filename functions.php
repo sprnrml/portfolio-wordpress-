@@ -9,7 +9,7 @@ function register_stylesheet() { //読み込むCSSを登録する
 	wp_register_style('slick-theme', get_template_directory_uri().'/css/slick-theme.css');
     wp_register_style('slick', get_template_directory_uri().'/css/slick.css');
 	wp_register_style('reset', get_template_directory_uri().'/css/reset.css');
-	wp_register_style('style', get_template_directory_uri().'/css/style.css');
+	wp_register_style('style', get_template_directory_uri().'/css/style.css?ver=1.0.0', array() );
 }
 function add_stylesheet() { //登録したCSSを以下の順番で読み込む
 	register_stylesheet();

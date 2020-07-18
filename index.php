@@ -85,7 +85,6 @@
     </header>
     <div class="main_wrapper">
       <main>
-
         <div class="main_slider">
           <ul class="slider">
             <img src="<?php bloginfo('template_directory'); ?>/img/slide-3.jpg" alt="image3">
@@ -97,27 +96,23 @@
         </div>
       </main>
       <div class="news">
-        <div class="news_title">新着情報</div>
+        <div class="news_title">New articles</div>
         <?php $wpwp_posts = new WP_Query(array('posts_per_page' => 5));
         ?>
         <?php if ($wpwp_posts->have_posts()) :
           while ($wpwp_posts->have_posts()) : $wpwp_posts->the_post();
         ?>
-            <dl class="news_container">
-              <dt class="news_container-">
-              <dd class="">
-                <?php the_time('Y年m月d日（D）'); ?>
-                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-              </dd>
-              </dt>
-            </dl>
+            <div class="news_container">
+              <?php the_time('Y.m.d.'); ?>
+              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            </div>
           <?php endwhile; ?>
           <?php wp_reset_postdata(); ?>
         <?php else : ?>
           記事はありません。
         <?php endif; ?>
         <div class="news_archive">
-          <a href="<?php echo get_post_type_archive_link('example'); ?>">＜記事一覧＞</a>
+          <a href="<?php get_post_type_archive_link( $post_type ); ?>">＜List of articles＞</a>
         </div>
       </div>
 

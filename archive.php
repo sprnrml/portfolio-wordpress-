@@ -1,10 +1,22 @@
 <?php get_header(); ?>
-<div class="container">
-	<main>
-		<?php while (have_posts()): the_post(); ?>
-			<?php the_content(); ?>
-		<?php endwhile; ?>
-	</main>
+<div class="news">
+  <div class="news_title">新着情報</div>
+  <?php $wpwp_posts = new WP_Query(array('posts_per_page' => 5));
+  ?>
+  <?php if ($wpwp_posts->have_posts()) :
+    while ($wpwp_posts->have_posts()) : $wpwp_posts->the_post();
+  ?>
+      <div class="news_container">
+        <?php the_time('Y.m.d.'); ?>
+        <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+      </div>
+    <?php endwhile; ?>
+    <?php the_posts_pagination(); ?>
+  <?php else : ?>
+    記事はありません。
+  <?php endif; ?>
+  <div class="news_archive">
+    <a href="<?php echo get_post_type_archive_link('archive'); ?>">＜List of articles＞</a>
+  </div>
 </div>
-	<?php get_footer(); ?>
-
+<?php get_footer(); ?>

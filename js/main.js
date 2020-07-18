@@ -1,5 +1,15 @@
 'use strict';
 
+$(function() {
+
+    // 一旦hide()で隠してフェードインさせる
+    $('.main_header').hide().fadeIn(3000);
+    $('.header_logo').hide().fadeIn(7000);
+    $('.news').hide().fadeIn(6000);
+    $('.main_footer').hide().fadeIn(4500);
+
+});
+
 //ドロップダウンメニュー
 $('li.dropdown').hover(function() {
         $('ul.dropdown_menu', this).slideDown();
