@@ -107,7 +107,7 @@ ul.dropdown_menu>li>a:hover {
 }
 
 ul.slider img {
-    height: 26vw;
+    height: 40vw;
     margin-top: 10px;
     object-fit: cover;
 }
@@ -115,7 +115,7 @@ ul.slider img {
 .news {
     border: solid 1px #000;
     font-family: -webkit-pictograph;
-    margin: 50px 0;
+    margin: 150px 0;
     max-width: 800px;
     padding-bottom: 10px;
     text-align: left;
@@ -140,8 +140,44 @@ ul.slider img {
     font-size: 30px;
 }
 
+.contents>ul {
+    display: inline-flex;
+}
+
+.contents>ul>li {
+    margin: 0 10px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .12), 0 2px 3px 0 rgba(0, 0, 0, .22);
+    transition: .3s;
+}
+
+.contents>ul>li:hover {
+    box-shadow: 0 15px 30px -5px rgba(0, 0, 0, .15), 0 0 5px rgba(0, 0, 0, .1);
+    transform: translateY(-4px);
+}
+
+ul.contents_box {
+    width: 350px;
+    height: 400px;
+    background-color: #fff;
+}
+
+ul.contents_box>li img {
+    width: 350px;
+}
+
+li.contents_box-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+li.contents_box-text {
+    text-align: left;
+}
+
 .main_footer {
     background-color: bisque;
+    margin-top: 100px;
 }
 
 .footer_icon {

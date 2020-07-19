@@ -112,10 +112,35 @@
           記事はありません。
         <?php endif; ?>
         <div class="news_archive">
-          <a href="<?php get_post_type_archive_link( $post_type ); ?>">＜List of articles＞</a>
+          <a href="<?php get_post_type_archive_link($post_type); ?>">＜List of articles＞</a>
         </div>
       </div>
 
+      <div class="contents">
+          <ul>
+            <li><a href="#">
+              <ul class="contents_box">
+                <li><img src="<?php bloginfo('template_directory'); ?>/img/gaiyou.jpg" alt="image"></li>
+                <li class="contents_box-title">概要</li>
+                <li class="contents_box-text">このサイトについて。</li>
+              </ul>
+            </a></li>
+            <li><a href="#">
+              <ul class="contents_box">
+                <li><img src="<?php bloginfo('template_directory'); ?>/img/shousai.jpg" alt="image"></li>
+                <li class="contents_box-title">詳細</li>
+                <li class="contents_box-text">サイト制作者のついて</li>
+              </ul>
+            </a></li>
+            <li><a href="#">
+              <ul class="contents_box">
+                <li><img src="<?php bloginfo('template_directory'); ?>/img/shumi.jpg" alt="image"></li>
+                <li class="contents_box-title">趣味</li>
+                <li class="contents_box-text">最近の趣味</li>
+              </ul>
+            </a></li>
+          </ul>
+      </div>
       <footer>
         <div class="main_footer">
 
@@ -125,7 +150,6 @@
             <li><a href="#"><i class="fab fa-instagram"></i></a></li>
           </ul>
         </div>
-
       </footer>
     </div>
   </div>
