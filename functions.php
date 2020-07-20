@@ -9,7 +9,7 @@ function register_stylesheet() { //読み込むCSSを登録する
 	wp_register_style('slick-theme', get_template_directory_uri().'/css/slick-theme.css');
     wp_register_style('slick', get_template_directory_uri().'/css/slick.css');
 	wp_register_style('reset', get_template_directory_uri().'/css/reset.css');
-	wp_register_style('style', get_template_directory_uri().'/css/style.css?ver=1.0.0', array() );
+	wp_register_style('style', get_template_directory_uri().'/css/style.css?ver=1.0.0', array(), date('YmdGis', filemtime(get_template_directory().'/css/style.css')) );
 }
 function add_stylesheet() { //登録したCSSを以下の順番で読み込む
 	register_stylesheet();
@@ -89,3 +89,18 @@ function my_set_page_categories( $query )
         $query->set( 'post_type', array( 'post', 'page', 'nav_menu_item' )) ;
     }
 }
+
+/*ウィジェットの追加
+---------------------------------------------------------- */
+function arphabet_widgets_init() {
+
+	register_sidebar( array(
+		'name' => 'Home right sidebar',
+		'id' => 'home_right_1',
+		'before_widget' => '<div>',
+		'after_widget' => '</div>',
+		'before_title' => '<h2 class="rounded">',
+		'after_title' => '</h2>',
+	) );
+}
+add_action( 'widgets_init', 'arphabet_widgets_init' );

@@ -115,24 +115,30 @@ ul.slider img {
 .news {
     border: solid 1px #000;
     font-family: -webkit-pictograph;
-    margin: 150px 0;
+    margin: 150px 150px 0 150px;
     max-width: 800px;
-    padding-bottom: 10px;
+    padding-bottom: 120px;
     text-align: left;
 }
 
 .news_title {
     background-color: gray;
-    margin-bottom: 10px;
+    margin-bottom: 100px;
+    padding: 10px;
     text-align: left;
 }
 
 .news_container {
     border-bottom: dotted 1px #000;
+    margin: 60px;
 }
 
 .news_archive {
     text-align: right;
+}
+
+.contents {
+    margin-top: 150px;
 }
 
 .content_none {
@@ -145,24 +151,28 @@ ul.slider img {
 }
 
 .contents>ul>li {
-    margin: 0 10px;
+    margin: 0 20px;
     box-shadow: 0 0 3px 0 rgba(0, 0, 0, .12), 0 2px 3px 0 rgba(0, 0, 0, .22);
     transition: .3s;
+}
+
+.contents>ul>li:nth-last-child(2) {
+    margin: 0 auto;
 }
 
 .contents>ul>li:hover {
     box-shadow: 0 15px 30px -5px rgba(0, 0, 0, .15), 0 0 5px rgba(0, 0, 0, .1);
     transform: translateY(-4px);
+    opacity: 0.8;
 }
 
 ul.contents_box {
-    width: 350px;
-    height: 400px;
+    width: 100%;
     background-color: #fff;
 }
 
 ul.contents_box>li img {
-    width: 350px;
+    width: 100%;
 }
 
 li.contents_box-title {
@@ -172,12 +182,13 @@ li.contents_box-title {
 }
 
 li.contents_box-text {
+    padding: 0 10px 50px 10px;
     text-align: left;
 }
 
 .main_footer {
     background-color: bisque;
-    margin-top: 100px;
+    margin-top: 1000px;
 }
 
 .footer_icon {
@@ -190,6 +201,33 @@ li.contents_box-text {
     margin: 0 30px;
 }
 
+.main_page {
+    background-color: #fff;
+    background-image: url(../img/gaiyou_bg.jpg);
+    background-repeat: no-repeat;
+    color: #fff;
+    padding: 300px 0;
+    position: relative;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.main_page:before {
+    content: '';
+    background: inherit;
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+}
+
 @media screen and (max-width: 896px) {
     li.dropdown {
         cursor: pointer;
@@ -197,7 +235,7 @@ li.contents_box-text {
     }
     .news {
         border: solid 1px #000;
-        margin: 50px 0;
+        margin: 150px 0;
         max-width: 720px;
         padding-bottom: 10px;
         text-align: left;
@@ -264,5 +302,11 @@ li.contents_box-text {
         max-width: 360px;
         padding-bottom: 10px;
         text-align: left;
+    }
+    .contents>ul {
+        display: contents;
+    }
+    .contents>ul>li {
+        margin: 30px 10px;
     }
 }
