@@ -41,7 +41,9 @@
       <div class="main_header">
         <nav class="navbar">
           <div class="header_logo">
-            <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo1.jpg" alt="logo"></a>
+            <a href="<?php echo home_url(); ?>">ホーム
+            <!-- <img src="<?php bloginfo('template_directory'); ?>/img/logo1.jpg" alt="logo"> -->
+          </a>
           </div>
           <div class="header_menu">
             <ul>

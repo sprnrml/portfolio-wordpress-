@@ -1,9 +1,6 @@
-body {
-    background-color: floralwhite;
-    font-family: -webkit-pictograph;
-}
-
 .wrapper {
+    background-color: #F5F5F5;
+    font-family: -webkit-pictograph;
     margin: 0 auto;
 }
 
@@ -13,7 +10,7 @@ body {
 }
 
 .header_logo {
-    padding: 16px;
+    padding: 16px 16px 16px 100px;
 }
 
 .header_logo img {
@@ -49,6 +46,7 @@ li.dropdown>a:hover {
 }
 
 ul.dropdown_menu {
+    color: #000;
     display: none;
     z-index: 1;
     position: absolute;
@@ -62,12 +60,12 @@ ul.dropdown_menu:before {
     left: 50%;
     margin-left: -15px;
     border: 12px solid transparent;
-    border-bottom: 12px solid #000055;
+    border-bottom: 12px solid #F5F5F5;
     z-index: 2;
 }
 
 ul.dropdown_menu>li {
-    background-color: #000055;
+    background-color: #F5F5F5;
     padding: 0 24px 10px;
 }
 
@@ -93,6 +91,7 @@ ul.dropdown_menu>li>a:hover {
 }
 
 .main_wrapper {
+    text-align: -moz-center;
     text-align: -webkit-center;
 }
 
@@ -201,15 +200,38 @@ li.contents_box-text {
     margin: 0 30px;
 }
 
+.breadcrumb-area {
+    padding: 10px 0;
+}
+
+.breadcrumb-area>ul {
+    display: inline-flex;
+}
+
+.breadcrumb-area>ul>li>a {
+    border-bottom: solid 1px #000;
+}
+
 .main_page {
     background-color: #fff;
     background-image: url(../img/gaiyou_bg.jpg);
     background-repeat: no-repeat;
+    background-size: cover;
     color: #fff;
-    padding: 300px 0;
+    height: 415px;
+    padding: 30px 0;
     position: relative;
     z-index: 0;
     overflow: hidden;
+}
+
+.main_page h1 {
+    font-weight: bolder;
+    font-size: 30px;
+}
+
+.main_page p {
+    margin-top: 50px;
 }
 
 .main_page:before {
@@ -247,6 +269,9 @@ li.contents_box-text {
         background-color: #000;
         color: #fff;
         text-align: center;
+    }
+    .header_logo {
+        padding: 16px 16px 16px 40px;
     }
     .header_menu {
         display: none;

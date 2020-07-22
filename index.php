@@ -41,7 +41,9 @@
       <div class="main_header">
         <nav class="navbar">
           <div class="header_logo">
-            <a href="<?php echo home_url(); ?>"><img src="<?php bloginfo('template_directory'); ?>/img/logo1.jpg" alt="logo"></a>
+            <a href="<?php echo home_url(); ?>">ホーム
+            <!-- <img src="<?php bloginfo('template_directory'); ?>/img/logo1.jpg" alt="logo"> -->
+            </a>
           </div>
           <div class="header_menu">
             <ul>
@@ -69,9 +71,9 @@
               </li>
             </ul>
             <ul>
-              <li class="dropdown"><a href="#">アクセス</a>
+              <li class="dropdown"><a href="#">生息地</a>
                 <ul class="dropdown_menu">
-                  <li><?php $args = array('menu' => 'アクセス', 'menu_class' => 'menu', 'container' => false,);
+                  <li><?php $args = array('menu' => '生息地', 'menu_class' => 'menu', 'container' => false,);
                       wp_nav_menu($args); ?></li>
                 </ul>
               </li>
@@ -87,7 +89,7 @@
       <main>
         <div class="main_slider">
           <ul class="slider">
-            <img src="<?php bloginfo('template_directory'); ?>/img/slide-3.jpg" alt="image3">
+            <img src="<?php bloginfo('template_directory'); ?>/img/slide-1.jpg" alt="image3">
             <img src="<?php bloginfo('template_directory'); ?>/img/slide-5.jpg" alt="image5">
             <img src="<?php bloginfo('template_directory'); ?>/img/slide-6.jpg" alt="image6">
             <img src="<?php bloginfo('template_directory'); ?>/img/slide-7.jpg" alt="image7">

@@ -4,7 +4,6 @@ $(function() {
 
     // 一旦hide()で隠してフェードインさせる
     $('.main_header').hide().fadeIn(3000);
-    $('.header_logo').hide().fadeIn(7000);
 
 });
 
