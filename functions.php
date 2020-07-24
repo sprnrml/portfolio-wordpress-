@@ -29,6 +29,7 @@ wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquer
 wp_enqueue_script( 'main', get_template_directory_uri() . '/js/main.js', array(), '20151215', true );
 wp_enqueue_script( 'slick-min', get_template_directory_uri() . '/js/slick.min.js', array(), '20151215', true );
 wp_enqueue_style('fontawesome','https://use.fontawesome.com/releases/v5.2.0/css/all.css');
+wp_enqueue_style('devicon','https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css');
 
 }
 add_action( 'wp_enqueue_scripts', 'themes_file_scripts' );
