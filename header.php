@@ -8,6 +8,7 @@
 </head>
 
 <body>
+<div class="page_loader"></div>
   <div class="wrapper">
     <header>
       <div class="toggle_open">
@@ -30,20 +31,21 @@
                   wp_nav_menu($args); ?></li>
             </ul>
           </li>
-          <li class="toggle_open-menu"><a href="#">アクセス</a>
+          <li class="toggle_open-menu"><a href="#">生息地</a>
             <ul class="toggle_dropdown">
-              <li><?php $args = array('menu' => 'アクセス', 'menu_class' => 'menu', 'container' => false,);
+              <li><?php $args = array('menu' => '生息地', 'menu_class' => 'menu', 'container' => false,);
                   wp_nav_menu($args); ?></li>
             </ul>
           </li>
         </ul>
       </div>
       <div class="main_header">
+        <a href="ssss">ssss</a>
         <nav class="navbar">
           <div class="header_logo">
             <a href="<?php echo home_url(); ?>">ホーム
-            <!-- <img src="<?php bloginfo('template_directory'); ?>/img/logo1.jpg" alt="logo"> -->
-          </a>
+              <!-- <img src="<?php bloginfo('template_directory'); ?>/img/logo1.jpg" alt="logo"> -->
+            </a>
           </div>
           <div class="header_menu">
             <ul>
@@ -71,9 +73,9 @@
               </li>
             </ul>
             <ul>
-              <li class="dropdown"><a href="#">アクセス</a>
+              <li class="dropdown"><a href="#">生息地</a>
                 <ul class="dropdown_menu">
-                  <li><?php $args = array('menu' => 'アクセス', 'menu_class' => 'menu', 'container' => false,);
+                  <li><?php $args = array('menu' => '生息地', 'menu_class' => 'menu', 'container' => false,);
                       wp_nav_menu($args); ?></li>
                 </ul>
               </li>
