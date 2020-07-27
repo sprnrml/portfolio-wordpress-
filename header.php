@@ -40,7 +40,6 @@
         </ul>
       </div>
       <div class="main_header">
-        <a href="ssss">ssss</a>
         <nav class="navbar">
           <div class="header_logo">
             <a href="<?php echo home_url(); ?>">ホーム
