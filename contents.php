@@ -29,14 +29,14 @@
         <ul>
           <li class="skill_contents-title"><i class="devicon-html5-plain-wordmark colored"></i>HTML<i class="devicon-css3-plain-wordmark colored"></i>CSS</li>
           <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star black"></i></li>
-          <li class="skill_contents-text">コーディングができます。Sassを使ったコーディングも可能です。</li>
+          <li class="skill_contents-text">Sassを使ったコーディングも可能です。</li>
         </ul>
       </li>
       <li>
         <ul>
           <li class="skill_contents-title"><i class="devicon-wordpress-plain-wordmark colored"></i>Wordpress</li>
           <li><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star black"></i><i class="fas fa-star black"></i></li>
-          <li class="skill_contents-text">実務経験としては中規模サイトのオリジナルテーマを作成したことがあります。プラグインは手出せてません・・</li>
+          <li class="skill_contents-text">中規模サイトのオリジナルテーマを作成したことがあります。プラグインは手出せてません・・</li>
         </ul>
       </li>
       <li>
