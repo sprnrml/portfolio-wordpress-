@@ -4,21 +4,21 @@
         <ul class="contents_box">
           <li><img src="<?php bloginfo('template_directory'); ?>/img/gaiyou.jpg" alt="image"></li>
           <li class="contents_box-title">概要</li>
-          <li class="contents_box-text">このサイトについて。</li>
+          <li class="contents_box-text">このサイトについて</li>
         </ul>
       </a></li>
     <li><a href="<?php echo get_permalink(get_page_by_path('shousai')->ID); ?>">
         <ul class="contents_box">
           <li><img src="<?php bloginfo('template_directory'); ?>/img/shousai.jpg" alt="image"></li>
           <li class="contents_box-title">詳細</li>
-          <li class="contents_box-text">サイト制作者のついて</li>
+          <li class="contents_box-text">サイト制作者について</li>
         </ul>
       </a></li>
     <li><a href="<?php echo get_permalink(get_page_by_path('shumi')->ID); ?>">
         <ul class="contents_box">
           <li><img src="<?php bloginfo('template_directory'); ?>/img/shumi.jpg" alt="image"></li>
           <li class="contents_box-title">趣味</li>
-          <li class="contents_box-text">最近の趣味</li>
+          <li class="contents_box-text">サイト作者の最近の趣味</li>
         </ul>
       </a></li>
   </ul>

@@ -1,12 +1,5 @@
 'use strict';
 
-$(function() {
-
-    // 一旦hide()で隠してフェードインさせる
-    $('.main_header').hide().fadeIn(3000);
-
-});
-
 //ドロップダウンメニュー
 $('li.dropdown').hover(function() {
         $('ul.dropdown_menu', this).slideDown();
@@ -15,6 +8,8 @@ $('li.dropdown').hover(function() {
         $('ul.dropdown_menu', this).slideUp();
     }
 );
+
+
 
 //スライダー
 $(function() {
