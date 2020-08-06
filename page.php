@@ -16,7 +16,10 @@
           <div class="main_page">
           <h1><?php the_title(); ?></h1>
             <?php the_content(); ?>
+
+          <div class="main_page-sidebar">
             <?php dynamic_sidebar('main-sidebar'); ?>
+            </div>
           </div>
 
       <?php endwhile;

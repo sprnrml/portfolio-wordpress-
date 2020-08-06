@@ -123,7 +123,7 @@
   .news {
   border: solid 1px #000;
   font-family: -webkit-pictograph;
-  margin: 150px 150px 0 150px;
+  margin: 150px;
   max-width: 800px;
   padding-bottom: 50px;
   text-align: left;
@@ -154,7 +154,6 @@
   }
 
   .contents {
-  margin-top: 150px;
   }
 
   .content_none {
@@ -322,11 +321,23 @@
   }
   /*sidebar.php
   -----------------------------------------------------*/
-
   .sidebar {
-    position: absolute;
-    right: 20px;
+    padding: 10px 0 10px 5px;
   }
+  .sidebar h3 {
+    border-bottom: solid 1px #fff;
+  }
+  .sidebar>ul>li {
+    padding-top: 10px;
+  }
+  .main_page-sidebar {
+    position: absolute;
+    right: 30px;
+    top: 100px;
+    text-align: left;
+    width: 148px;
+  }
+
   /*404.php
   -----------------------------------------------------*/
 

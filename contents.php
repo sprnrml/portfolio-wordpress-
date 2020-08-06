@@ -2,9 +2,9 @@
   <ul class="scroll-fade">
     <li><a href="<?php echo get_permalink(get_page_by_path('gaiyou')->ID); ?>">
         <ul class="contents_box">
-          <li><img src="<?php bloginfo('template_directory'); ?>/img/gaiyou.jpg" alt="image"></li>
+          <li><img src="<?php bloginfo('template_directory'); ?>/img/gaiyou.png" alt="image"></li>
           <li class="contents_box-title">概要</li>
-          <li class="contents_box-text">このサイトについて</li>
+          <li class="contents_box-text">このサイトの目的について</li>
         </ul>
       </a></li>
     <li><a href="<?php echo get_permalink(get_page_by_path('shousai')->ID); ?>">
@@ -18,7 +18,7 @@
         <ul class="contents_box">
           <li><img src="<?php bloginfo('template_directory'); ?>/img/shumi.jpg" alt="image"></li>
           <li class="contents_box-title">趣味</li>
-          <li class="contents_box-text">サイト作者の最近の趣味</li>
+          <li class="contents_box-text">サイト制作者の最近の趣味</li>
         </ul>
       </a></li>
   </ul>
