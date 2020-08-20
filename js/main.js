@@ -2,10 +2,10 @@
 
 //ドロップダウンメニュー
 $('li.dropdown').hover(function() {
-        $('ul.dropdown_menu', this).slideDown();
+        $('ul.dropdown_menu', this).stop().slideDown();
     },
     function() {
-        $('ul.dropdown_menu', this).slideUp();
+        $('ul.dropdown_menu', this).stop().slideUp();
     }
 );
 

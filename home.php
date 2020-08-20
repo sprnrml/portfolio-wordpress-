@@ -12,13 +12,23 @@
     </div>
     <div class="news scroll-fade">
       <div class="news_title">New articles</div>
+
       <?php $wpwp_posts = new WP_Query(array('posts_per_page' => 3));
       ?>
       <?php if ($wpwp_posts->have_posts()) :
         while ($wpwp_posts->have_posts()) : $wpwp_posts->the_post();
       ?>
+          <div class="paneltop">
+            <?php
+            $category = get_the_category();
+            $cat_id   = $category[0]->cat_ID;
+            $cat_name = $category[0]->cat_name;
+            $cat_slug = $category[0]->category_nicename;
+            ?>
+          </div>
           <div class="news_container">
             <?php the_time('Y.m.d.'); ?>
+            <span class="news_category"><?php echo $cat_name; ?></span>
             <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
           </div>
         <?php endwhile; ?>
@@ -27,7 +37,7 @@
         記事はありません。
       <?php endif; ?>
       <div class="news_archive">
-        <a href="<?php echo get_post_type_archive_link($post_type); ?>">＜List of articles＞</a>
+        <a href="<?php echo get_category_link(1); ?>">＜List of articles＞</a>
       </div>
     </div>
     <?php get_template_part('contents'); ?>

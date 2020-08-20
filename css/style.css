@@ -152,10 +152,9 @@
   .news_archive>a:hover {
   color: #C0C0C0;
   }
-
-  .contents {
+  .news_category {
+    padding: 0 10px;
   }
-
   .content_none {
   padding-left: 40px;
   font-size: 30px;
@@ -278,6 +277,21 @@
   .breadcrumb-area>ul>li>a {
   border-bottom: solid 1px #000;
   }
+  /*archive.php
+  -----------------------------------------------------*/
+  .category {
+    padding-top: 30px;
+  }
+  .category>ul {
+    display: -webkit-inline-box;
+    padding-top: 10px;
+  }
+  .category>ul>li {
+    border: solid;
+    margin-right: 5px;
+    padding: 4px;
+  }
+
   /*page.php
   -----------------------------------------------------*/
 
