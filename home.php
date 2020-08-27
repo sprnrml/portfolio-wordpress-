@@ -37,7 +37,7 @@
         記事はありません。
       <?php endif; ?>
       <div class="news_archive">
-        <a href="<?php echo get_category_link(1); ?>">＜List of articles＞</a>
+        <a href="<?php echo get_category_link(12); ?>">＜List of articles＞</a>
       </div>
     </div>
     <?php get_template_part('contents'); ?>
