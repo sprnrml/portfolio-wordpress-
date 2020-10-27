@@ -286,12 +286,16 @@
       display: -webkit-inline-box;
       padding-top: 10px;
     }
-    .category>ul>li {
+    /* ul.children {
+      border: solid;
+      margin-right: 5px;
+      padding: 4px;
+    } */
+    .cat-item {
       border: solid;
       margin-right: 5px;
       padding: 4px;
     }
-
     /*page.php
     -----------------------------------------------------*/
 
@@ -512,7 +516,6 @@
 
     .menu-item {
     border-bottom: none;
-    padding: 0;
     }
     .menu-item>a {
     border-bottom: solid 1px #fff;
@@ -542,6 +545,11 @@
     .contents>ul>li {
     margin: 30px 10px;
     }
+
+    .skill_title {
+      text-align: center;
+      font-size: 40px;
+  }
 
     .skill_container>li {
     margin: 130px 0 0 44px;
