@@ -14,8 +14,8 @@
     ));
     foreach ($terms as $term)
     ?>
-   <?php
-    if (have_posts()) :
+    <?php
+  if (have_posts()) :
     while (have_posts()) : the_post();
     ?>
         <?php
@@ -36,9 +36,13 @@
       記事はありません。
     <?php endif; ?>
     <?php if (function_exists("the_pagination")) the_pagination(); ?>
-    <div class="news_archive">
-      <a href="<?php echo get_category_link(12); ?>">＜List of articles＞</a>
-      <a href="<?php echo home_url(); ?>">＜home＞</a>
+    <div class="archive_bottom clear_box">
+    <a href="<?php echo get_category_link(12); ?>">＜List of articles＞</a>
+    <a href="<?php echo home_url(); ?>">＜home＞</a>
     </div>
   </div>
-  <?php get_footer(); ?>
+</div>
+<?php get_footer(); ?>
+
+
+

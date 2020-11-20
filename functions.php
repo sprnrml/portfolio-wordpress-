@@ -132,3 +132,4 @@ function the_pagination() {
   ) );
   echo '</nav>';
 }
+
