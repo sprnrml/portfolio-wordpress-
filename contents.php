@@ -9,7 +9,7 @@
       </a></li>
     <li><a href="<?php echo get_permalink(get_page_by_path('shousai')->ID); ?>">
         <ul class="contents_box">
-          <li><img src="<?php bloginfo('template_directory'); ?>/img/shousai.jpg" alt="image"></li>
+          <li><img src="<?php bloginfo('template_directory'); ?>/img/shousai.jpg." alt="image"></li>
           <li class="contents_box-title">詳細</li>
           <li class="contents_box-text">サイト制作者について</li>
         </ul>

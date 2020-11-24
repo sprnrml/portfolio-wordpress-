@@ -36,7 +36,7 @@
       記事はありません。
     <?php endif; ?>
     <?php if (function_exists("the_pagination")) the_pagination(); ?>
-    <div class="archive_bottom clear_box">
+    <div class="archive_bottom">
     <a href="<?php echo get_category_link(12); ?>">＜List of articles＞</a>
     <a href="<?php echo home_url(); ?>">＜home＞</a>
     </div>

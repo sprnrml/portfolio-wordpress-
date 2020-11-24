@@ -72,7 +72,7 @@
    position: absolute;
    top: -13px;
    left: 50%;
-   margin-left: -15px;
+   margin: 0 0 0 -15px;
    border: 12px solid transparent;
    border-bottom: 12px solid #a9a9a9;
    z-index: 2;
@@ -83,7 +83,7 @@
  }
 
  .menu-item {
-   padding-top: 16px;
+   padding: 16px 0 0 0;
    border-bottom: solid 1px;
  }
 
@@ -116,22 +116,22 @@
 
  ul.slider img {
    height: 22vw;
-   margin-top: 50px;
+   margin: 50px 0 0 0;
    object-fit: cover;
  }
 
  .news {
    border: solid 1px #000;
    font-family: -webkit-pictograph;
-   margin: 150px;
+   margin: 50px;
    max-width: 800px;
-   padding-bottom: 50px;
+   padding: 0 0 50px 0;
    text-align: left;
  }
 
  .news_title {
    background-color: gray;
-   margin-bottom: 100px;
+   margin: 0 0 100px 0;
    padding: 10px;
    text-align: left;
  }
@@ -158,7 +158,7 @@
  }
 
  .content_none {
-   padding-left: 40px;
+   padding: 0 0 040px;
    font-size: 30px;
  }
 
@@ -170,10 +170,6 @@
    margin: 0 20px;
    box-shadow: 0 0 3px 0 rgba(0, 0, 0, .12), 0 2px 3px 0 rgba(0, 0, 0, .22);
    transition: .3s;
- }
-
- .contents>ul>li:nth-last-child(2) {
-   margin: 0 auto;
  }
 
  .contents>ul>li:hover {
@@ -209,7 +205,7 @@
  .skill_title {
    font-size: 60px;
    font-weight: bold;
-   padding-bottom: 20px;
+   padding: 0 020px 0;
  }
 
  .skill_container {
@@ -236,17 +232,18 @@
  }
 
  .skill_contents-text {
-   padding-top: 10px;
+   padding: 10px 0 0 0;
    text-align: left;
  }
 
  .skill_tools {
-   padding-top: 40px;
+   padding: 40px 0 0 0;
    font-size: 70px;
  }
 
  .main_footer {
    background-color: bisque;
+   margin: 200px 0 0 0;
    text-align: center;
  }
 
@@ -285,26 +282,26 @@
     -----------------------------------------------------*/
 
  .category {
-   padding-top: 30px;
+   padding: 30px 0 0 0;
  }
 
  .category>ul {
    display: -webkit-inline-box;
-   padding-top: 10px;
+   padding: 10px 0 0 0;
  }
 
  .cat-item {
    border: solid;
-   margin-right: 5px;
+   margin: 0 5px 0 0;
    padding: 4px;
  }
 
  ul.page-numbers {
    display: inline-flex;
-   margin-left: 20px;
+   margin: 0 0 0 20px;
  }
  ul.page-numbers > li {
-   margin-left: 10px;
+   margin: 0 0 0 10px;
  }
 
  ul.page-numbers > li > a:hover {
@@ -324,17 +321,13 @@
 
  .main_page {
   color: #000;
-  display: flex;
-  overflow: visible;
-  padding: 90px 0;
-  width: 70%;
   justify-content: center;
-  position: relative;
-  left: 134px;
+  overflow: visible;
+  margin: 90px 0 0 0;
  }
 
  .main_page-text {
-   max-width:800px;
+   max-width:600px;
  }
 
  .main_page h1 {
@@ -343,7 +336,7 @@
  }
 
  .main_page p {
-   margin-top: 50px;
+   margin: 50px 0 0 0;
  }
 
  /*sidebar.php
@@ -355,15 +348,20 @@
 
  .sidebar h3 {
    border-bottom: solid 1px #000;
+   background-color: darkgray;
  }
 
  .sidebar>ul>li {
-   padding-top: 10px;
+   padding: 10px 0 0 0;
+   border-bottom: 1px solid #000;
  }
 
  .main_page-sidebar {
-   width: 148px;
-   margin-left: 112px;
+   max-width: 148px;
+   position: absolute;
+   right: 184px;
+   top: 310px;
+   width: 100%;
  }
 
  /*404.php
@@ -379,7 +377,7 @@
  }
 
  .contents_none p {
-   margin-top: 20px;
+   margin: 20px 0 0 0;
  }
 
  .contents_none p>a {
@@ -388,6 +386,13 @@
 
  .contents_none p>a:hover {
    color: #C0C0C0;
+ }
+
+ @media screen and (max-width: 1250px) {
+  .main_page-sidebar {
+    position: static;
+    margin: 50px 0 0 0;
+  }
  }
 
  @media screen and (max-width: 896px) {
@@ -435,7 +440,7 @@
    }
    .menu-item {
      border-bottom: none;
-     padding-top: 12px;
+     padding: 12px 0 0 0;
    }
    .menu-item>a {
      border-bottom: solid 1px #fff;
@@ -449,9 +454,8 @@
    }
    .news {
      border: solid 1px #000;
-     margin: 50px 0;
+     margin: 50px 16px;
      max-width: 720px;
-     padding-bottom: 10px;
      text-align: left;
    }
    .skill_container>li {
@@ -523,9 +527,9 @@
    }
    .news {
      border: solid 1px #000;
-     margin: 50px 0;
+     margin: 50px 16px;
      max-width: 360px;
-     padding-bottom: 10px;
+     padding: 0 0 10px 0;
      text-align: left;
    }
    .contents>ul {
@@ -542,10 +546,13 @@
      margin: 130px 0 0 44px;
      width: 78%;
    }
+   .main_page-text {
+    margin: 0 20px;
+}
    /*sidebar.php
     -----------------------------------------------------*/
    .main_page-sidebar {
-     padding-top: 70px;
+     padding: 70px 0 0 0;
      position: initial;
      text-align: -webkit-center;
    }
