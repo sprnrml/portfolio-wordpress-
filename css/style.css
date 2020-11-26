@@ -365,6 +365,9 @@
    width: 100%;
  }
 
+ .sidebar>ul>li>a:hover {
+  color: #C0C0C0;
+}
  /*404.php
     -----------------------------------------------------*/
 
@@ -393,6 +396,7 @@
   .main_page-sidebar {
     position: static;
     margin: 50px 0 0 0;
+    max-width: initial;
   }
  }
 
@@ -469,12 +473,7 @@
     -----------------------------------------------------*/
    .main_page-sidebar{
      margin:50px 0 0 0;
-   }
-   li.page_item>a {
-     border-bottom: solid 1px #fff;
-   }
-   .sidebar>ul>li>a {
-     border-bottom: solid 1px #fff;
+     max-width: initial;
    }
  }
 
