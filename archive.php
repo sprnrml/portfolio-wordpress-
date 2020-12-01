@@ -25,11 +25,19 @@
         $cat_slug = $category[0]->category_nicename;
         ?>
         <div class="news_container">
+
+        <?php if(has_post_thumbnail()) : ?>
+           <?php the_post_thumbnail('thumbnail'); ?>
+            <?php else : ?>
+              <div class='thumbnails'>
+            <img src="<?php echo get_template_directory_uri(); ?>/img/noimage.png">
+            </div>
+            <?php endif; ?>
+
           <?php the_time('Y.m.d.'); ?>
           <span class="news_category"><?php echo $cat_name; ?></span>
           <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
         </div>
-
       <?php endwhile; ?>
 
     <?php else : ?>

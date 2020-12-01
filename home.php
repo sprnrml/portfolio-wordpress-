@@ -3,9 +3,9 @@
   <div class="main_wrapper">
     <div class="main_slider">
       <ul class="slider">
-        <img src="<?php bloginfo('template_directory'); ?>/img/slide-10.jpg" alt="image3">
+        <img src="<?php bloginfo('template_directory'); ?>/img/slide-11.jpg" alt="image3">
         <img src="<?php bloginfo('template_directory'); ?>/img/slide-5.jpg" alt="image5">
-        <img src="<?php bloginfo('template_directory'); ?>/img/slide-6.jpg" alt="image6">
+        <img src="<?php bloginfo('template_directory'); ?>/img/slide-12.jpg" alt="image6">
         <img src="<?php bloginfo('template_directory'); ?>/img/slide-7.jpg" alt="image7">
         <img src="<?php bloginfo('template_directory'); ?>/img/slide-9.jpg" alt="image8">
       </ul>

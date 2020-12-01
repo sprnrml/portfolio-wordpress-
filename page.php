@@ -27,4 +27,6 @@
 
   </div>
 </main>
+
+<div class='footer-margin'></div>
 <?php get_footer(); ?>

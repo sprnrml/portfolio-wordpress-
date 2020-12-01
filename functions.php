@@ -133,3 +133,6 @@ function the_pagination() {
   echo '</nav>';
 }
 
+/*サムネイル表示
+---------------------------------------------------------- */
+add_theme_support('thumbnais');
