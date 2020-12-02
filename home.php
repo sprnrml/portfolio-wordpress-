@@ -17,17 +17,19 @@
       <?php if ($wpwp_posts->have_posts()) :
         while ($wpwp_posts->have_posts()) : $wpwp_posts->the_post();
       ?>
-          <div class="news_container">
-            <?php the_time('Y.m.d.'); ?>
-            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-          </div>
+          <a href="<?php the_permalink(); ?>">
+            <div class="news_container">
+              <?php the_time('Y.m.d.'); ?>
+              <?php the_title(); ?>
+            </div>
+          </a>
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
       <?php else : ?>
         記事はありません。
       <?php endif; ?>
       <div class="news_archive">
-      <a href="<?php echo get_category_link(12); ?>">＜List of articles＞</a>
+        <a href="<?php echo get_category_link(12); ?>">＜記事一覧＞</a>
       </div>
     </div>
     <?php get_template_part('contents'); ?>

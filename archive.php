@@ -26,13 +26,13 @@
         ?>
         <div class="news_container">
 
-        <?php if(has_post_thumbnail()) : ?>
-           <?php the_post_thumbnail('thumbnail'); ?>
-            <?php else : ?>
-              <div class='thumbnails'>
-            <img src="<?php echo get_template_directory_uri(); ?>/img/noimage.png">
+          <?php if (has_post_thumbnail()) : ?>
+            <?php the_post_thumbnail('thumbnail'); ?>
+          <?php else : ?>
+            <div class='thumbnails'>
+              <img src="<?php echo get_template_directory_uri(); ?>/img/noimage.png">
             </div>
-            <?php endif; ?>
+          <?php endif; ?>
 
           <?php the_time('Y.m.d.'); ?>
           <span class="news_category"><?php echo $cat_name; ?></span>
@@ -45,12 +45,9 @@
     <?php endif; ?>
     <?php if (function_exists("the_pagination")) the_pagination(); ?>
     <div class="archive_bottom">
-    <a href="<?php echo get_category_link(12); ?>">＜List of articles＞</a>
-    <a href="<?php echo home_url(); ?>">＜home＞</a>
+      <a href="<?php echo get_category_link(12); ?>">＜記事一覧＞</a>
+      <a href="<?php echo home_url(); ?>">＜home＞</a>
     </div>
   </div>
 </div>
 <?php get_footer(); ?>
-
-
-

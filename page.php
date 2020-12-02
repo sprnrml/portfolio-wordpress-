@@ -21,10 +21,8 @@
             <?php dynamic_sidebar('main-sidebar'); ?>
           </div>
         </div>
-
     <?php endwhile;
     endif; ?>
-
   </div>
 </main>
 

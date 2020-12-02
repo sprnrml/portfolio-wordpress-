@@ -28,7 +28,6 @@ function themes_file_scripts()
   wp_deregister_script('jquery'); //デフォルトの jQuery は読み込まない
   //CDN から読み込む
   wp_enqueue_script('jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js', array(), '1.11.3', true);
-  // wp_enqueue_script( 'jquery-mig', '//cdnjs.cloudflare.com/ajax/libs/jquery-migrate/1.2.1/jquery-migrate.min.js', array(), '1.2.1', true);
   wp_enqueue_script('main', get_template_directory_uri() . '/js/main.js', array(), '20151215', true);
   wp_enqueue_script('slick-min', get_template_directory_uri() . '/js/slick.min.js', array(), '20151215', true);
   wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.2.0/css/all.css');
@@ -135,4 +134,4 @@ function the_pagination() {
 
 /*サムネイル表示
 ---------------------------------------------------------- */
-add_theme_support('thumbnais');
+add_theme_support('post-thumbnails');

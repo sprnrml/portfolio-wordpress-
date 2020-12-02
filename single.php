@@ -13,7 +13,7 @@
       <?php endwhile;
       endif; ?>
       <div class="news_archive">
-        <a href="<?php echo get_post_type_archive_link('example'); ?>">＜List of articles＞</a>
+        <a href="<?php echo get_post_type_archive_link('example'); ?>">＜カテゴリー　一覧＞</a>
       </div>
     </div>
   </div>

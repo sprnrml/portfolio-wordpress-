@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<div class="page_loader"></div>
+  <div class="page_loader"></div>
   <div class="wrapper">
     <header>
       <div class="toggle_open">

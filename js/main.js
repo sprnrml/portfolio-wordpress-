@@ -9,8 +9,6 @@ $('li.dropdown').hover(function() {
     }
 );
 
-
-
 //スライダー
 $(function() {
     $('.slider').slick({
@@ -24,16 +22,20 @@ $(function() {
 //ハンバーガーメニュー
 $('#toggle_menu').on('click', function() {
     $('.toggle_open').slideToggle();
+    return false;
 });
+  $(window).resize(function(){
+      $(".toggle_open").hide();
+    });
 
-//ハンバーガーメニューオープン
+    //ハンバーガーメニューオープン
 $('.toggle_open-menu').on('click', function() {
     $('.toggle_dropdown', this).slideToggle();
 });
 
 //スクロール時フェードイン
 $(function() {
-    var effect_pos = -100; // 画面下からどの位置でフェードさせるか(px)
+    var effect_pos = -150; // 画面下からどの位置でフェードさせるか(px)
     var effect_move = 50; // どのぐらい要素を動かすか(px)
     var effect_time = 800; // エフェクトの時間(ms) 1秒なら1000
 
@@ -60,5 +62,22 @@ $(function() {
                 });
             }
         });
+    });
+});
+
+//topへスクロール
+$(function() {
+    var pageTop = $('.page_top');
+    pageTop.hide();
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 800) {
+            pageTop.fadeIn();
+        } else {
+            pageTop.fadeOut();
+        }
+    });
+    pageTop.click(function () {
+        $('body, html').animate({scrollTop:0}, 500, 'swing');
+        return false;
     });
 });
